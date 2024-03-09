@@ -1,0 +1,31 @@
+.form{
+   
+   box-shadow: 2px 2px 5px gray;
+  
+   background-color: rgb(245, 245, 203);
+   border-radius: 5px;
+}
+
+.email{
+    text-align: center;
+
+}
+
+.password{
+    text-align: center;
+}
+
+.btn{
+   
+    color: white;
+    background-color: rgb(14, 117, 121);
+    border-radius: 20px;
+    width: 150px;
+}
+
+h1{
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 1px 1px black;
+    color:  rgb(14, 117, 121);
+}

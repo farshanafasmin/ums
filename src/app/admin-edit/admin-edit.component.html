@@ -1,0 +1,28 @@
+    <div class="card-body" *ngIf="!editClicked">
+        <h2>Login time:{{data | date :'medium'}}</h2>
+        <h5 class="card-title fs-5 ">Edit Profile</h5>
+        <img [src]="profilePic" width="150" height="150" alt="no image"> <br><br>
+        <button (click)="editClick()" class="btn ">Edit</button>
+    </div>
+
+
+    <div *ngIf="editClicked" id="profile" class="text-center p-5">
+        <label for="p1">
+            <input (change)="getFile($event)" type="file" style="display: none;" id='p1'>
+            <img class="rounded" [src]="profilePic" alt="no image" width="150" height="150">
+        </label>
+
+        <div class="form-floating my-3">
+            <input [(ngModel)]="admin.email" type="email" name="e1" class="form-contol" placeholder="Email">
+            <!-- <label for="floatingInput text-dark">Email address</label> -->
+        </div>
+
+        <div class="form-floating">
+            <input [(ngModel)]="admin.password" type="text" name="p1" class="form-contol" placeholder="Password">
+            <!-- <label for="floatingInput text-dark">Password</label> -->
+        </div>
+
+
+        <button (click)="editAdmin()" class="btn mt-2">Update</button>
+        <button (click)="cancelEdit()"  class="btn mt-2">Cancel</button>
+    </div>

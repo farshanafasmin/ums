@@ -1,0 +1,46 @@
+#active{
+    background-color: green;
+}
+
+#inactive{
+    background-color: orange;
+}
+
+#remove{
+    background-color: red;
+}
+
+.btn{
+    background-color: rgb(14, 117, 121);
+    border-radius: 20px;
+    width: 150px;
+    color: white;
+}
+
+h1{
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 1px 1px black;
+    color:  rgb(14, 117, 121);
+    margin-top: 50px;
+}
+.actions{
+    background-color:rgb(14, 117, 121) ;
+}
+.input-group {
+    height: 10px; /* Adjust the height as per your requirement */
+}
+
+#floatingInputGroup1{
+    background-color: rgb(14, 117, 121);
+   color: white;
+ 
+} 
+
+.form-control::placeholder {
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}

@@ -1,0 +1,38 @@
+
+<h1>Add New User</h1>
+<div class="row">
+    <div class="col-3">
+
+    </div>
+
+    <div class="col-6 mt-5 text-center">
+        <form   (ngSubmit)="addUser()" [formGroup]="userModel">
+          
+            <div class="mb-3 ms-3 me-3 ">
+              <label for="name" class="form-label mt-5">Name</label>
+              <input formControlName="name" type="text" class="form-control" id="name" name="name" >
+            </div>
+            <div *ngIf="userModel.get('name')?.errors && userModel.get('name')?.touched">
+              <p class="text-danger">Include letters and whitespaces only</p>
+            </div>
+            <div class="mb-3 ms-3 me-3">
+              <label for="email" class="form-label">Email</label>
+              <input formControlName="email" type="text" class="form-control" id="email" name="email" >
+            </div>
+            <div *ngIf="userModel.get('email')?.errors && userModel.get('email')?.touched" >
+              <p class="text-danger">Please enter a valid email</p>
+            </div>
+            <div class="mb-3 dropdown ">
+                <select formControlName="status" name="status" id="status" class="w-75 p-2 rounded">
+                  <option disabled selected hidden value="" >Status</option>
+  
+                  <option value="1">Active</option>
+                    <option value="0">In active</option>
+                </select>
+              </div>
+            <button type="submit" class="btn btn-primary w-25 mb-5 mx-auto">Add</button>
+          </form>
+    </div>
+
+    <div class="col-3"></div>
+</div>

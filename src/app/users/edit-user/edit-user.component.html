@@ -1,0 +1,33 @@
+
+<h1>Update User</h1>
+<div class="row">
+    <div class="col-3">
+
+    </div>
+
+    <div class="col-6 mt-5 text-center">
+        <form (ngSubmit)="updateData()">
+          
+            <div class="mb-3 ms-3 me-3 ">
+              <label for="name" class="form-label mt-5">Name</label>
+              <input [(ngModel)]="userData.name" type="text" class="form-control" id="name" name="name" >
+            </div>
+           
+            <div class="mb-3 ms-3 me-3">
+              <label for="email" class="form-label">Email</label>
+              <input [(ngModel)]="userData.email"  type="text" class="form-control" id="email" name="email" >
+            </div>
+           
+            <div class="mb-3 dropdown ">
+                <select [(ngModel)]="userData.status" name="status" id="status" class="w-75 p-2 rounded">
+                  <option disabled selected hidden value="" >Status</option>
+                  <option value="1">Active</option>
+                    <option value="0">In active</option>
+                </select>
+              </div>
+            <button type="submit" class="btn btn-primary w-25 mb-5 mx-auto">Update</button>
+          </form>
+    </div>
+
+    <div class="col-3"></div>
+</div>

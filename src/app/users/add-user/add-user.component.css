@@ -1,0 +1,19 @@
+form{
+    box-shadow: 2px 2px 5px black;
+    background-color: rgb(245, 245, 203);
+
+}
+
+button{
+    color: white;
+    background-color: rgb(14, 117, 121);
+    border-radius: 20px;
+}
+
+h1{
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 1px 1px black;
+    color:  rgb(14, 117, 121);
+    margin-top: 50px;
+}
